@@ -3,22 +3,27 @@ header {
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 header .logo {
     background: url("../images/logo.png") no-repeat;
     left: 20px;
     height: 100%;
+    width: 100%;
 }
 
 header .available{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    right-border: 30px;
+    border-right: 30px;
     background: #ff545f;
+    margin-right: 30px;
 }
 
-
-
-
-#ff545f
+header .available:hover{
+    background-color: #cccccc;
+}
