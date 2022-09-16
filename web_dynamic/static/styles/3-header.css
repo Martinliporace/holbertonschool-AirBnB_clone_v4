@@ -9,3 +9,16 @@ header .logo {
     left: 20px;
     height: 100%;
 }
+
+header .available{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right-border: 30px;
+    background: #ff545f;
+}
+
+
+
+
+#ff545f
