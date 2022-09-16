@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Starts a Flash Web Application """
-from pickle import GET
 from models import storage
 from models.state import State
 from models.city import City
@@ -36,7 +35,7 @@ def hbnb():
     places = storage.all(Place).values()
     places = sorted(places, key=lambda k: k.name)
 
-    return render_template("templates/1-hbnb.html",
+    return render_template('1-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
                            places=places,
@@ -46,5 +45,4 @@ def hbnb():
 
 if __name__ == "__main__":
     """ Main Function """
-    app.run(debug=True)
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000, debug=True)
