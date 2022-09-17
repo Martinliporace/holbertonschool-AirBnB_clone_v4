@@ -15,15 +15,15 @@ header .logo {
     width: 100%;
 }
 
-header .available{
+#api_status {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border-right: 30px;
-    background: #ff545f;
+    background: #cccccc;
     margin-right: 30px;
 }
 
-header .available:hover{
-    background-color: #cccccc;
+#api_status.available {
+    background-color: #ff545f;
 }
